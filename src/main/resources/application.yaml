@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: TODO-MS
+
+  # Hibernate Config
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  # Datasource Config
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/todo
+    username: root
+    password: root
+
